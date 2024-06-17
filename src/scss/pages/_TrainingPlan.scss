@@ -1,0 +1,22 @@
+.training-plan{
+    @include flex-center(column, nowrap);
+    gap: 3rem;
+    flex-grow: 1;
+    margin-bottom: 3rem;
+
+    &__h1{
+        font-size: 2.9rem;
+
+        @include mq($m-size){
+            font-size: 2.4rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.95rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.75rem;
+        }
+    }
+}

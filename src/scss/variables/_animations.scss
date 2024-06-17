@@ -1,0 +1,45 @@
+@keyframes invalid-form {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes close-alert {
+    
+    0%{
+        
+        transform: scaleY(0);
+    }
+
+    100%{
+       
+        transform: scaleY(100%);
+    }
+}
+
+
+
+@keyframes added-animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+        color: $font-color;
+    }
+
+    20%{
+        opacity: 1;
+        transform: translateX(0);
+        color: green;
+    }
+
+    100%{
+        color: $font-color;
+    }
+}

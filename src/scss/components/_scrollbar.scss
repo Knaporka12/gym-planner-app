@@ -1,0 +1,68 @@
+.scrollbar{
+
+    min-width: 100%;
+    padding: 5rem 120rem;
+    @include flex-center(row, nowrap);
+    justify-content: center;
+    background-color: $header-color;
+    transition: 0.3s all;
+
+
+    &__h2{
+        font-size: 2.25rem;
+
+        @include mq($l-size){
+            font-size: 2.05rem;
+        }
+
+        @include mq($m-size){
+            font-size: 1.8rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.65rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.45rem;
+        }
+    }
+
+    &__container{
+        position: relative;
+    }
+
+    &__container-arrows{
+        width: 100%;
+        background-color: transparent;
+        @include flex-center();
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        margin-top: -6rem;
+        z-index: 1;
+        padding: 1rem;
+    }
+
+    &__btn-arrow{
+        all: unset;
+
+        &:hover{
+            all: unset;
+        }
+
+        &:disabled{
+            opacity: 0.2;
+        }
+
+    }
+
+    &__btn-arrow:not(:disabled):hover &__arrow-icon{
+        color: $theme-color;
+        cursor: pointer;
+    }
+
+    &__arrow-icon{
+        transition: 0.2s all;
+    }
+
+}

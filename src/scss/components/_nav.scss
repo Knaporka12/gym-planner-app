@@ -1,0 +1,47 @@
+.nav {
+  background-color: $header-color;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  @include flex-center();
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  border-bottom: $theme-border;
+  z-index: 1000;
+  margin-bottom: 4rem;
+  z-index: 1001;
+
+  @include mq($l-size){
+    @include flex-center(column, nowrap);
+  }
+
+  @include mq($s-size){
+    gap: 0.65rem;
+  }
+
+  &__figure{
+    width: 125px;
+
+    @include mq($xs-size){
+      width: 105px;
+    }
+  }
+
+  &__logo{
+    width: 100%;
+    height: auto;
+  }
+
+  &__ul{
+    display: grid;
+    place-items: center center;
+    grid-template-columns: repeat(3, 200px);
+
+    @include mq($s-size){
+      @include flex-center(column, nowrap);
+      gap: 0.5rem;
+    }
+  }
+  
+}

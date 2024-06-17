@@ -1,0 +1,21 @@
+.missing {
+
+    flex-grow: 1;
+    @include flex-center(column, nowrap);
+    gap: 1.5rem;
+
+
+    h2 {
+        font-size: 2.15rem;
+    }
+
+    a {
+        font-size: 2.85rem;
+        text-decoration: underline !important; //bo w komponentach mam ustawione na none, w NoMatching component nie musze tego dawac bo  w mainie w scss jest najpierw zaimportowany components a pozniej NoMatching component
+        transition: 0.15s all;
+
+        &:hover {
+            color: $theme-color;;
+        }
+    }
+}

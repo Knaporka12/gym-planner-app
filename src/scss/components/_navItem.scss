@@ -1,0 +1,46 @@
+.nav-item{
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.3s all;
+  padding: 0.25rem;
+
+  &:hover, &.selected{
+    font-size: 1.6rem;
+    transform: translateY(-5px);
+    color: $theme-color;
+
+    @include mq($l-size){
+      font-size: 1.55rem;
+    }
+
+    @include mq($m-size){
+      font-size: 1.5rem;
+    }
+
+    @include mq($s-size){
+      font-size: 1.4rem;
+    }
+
+    @include mq($xs-size){
+      font-size: 1.35rem;
+    }
+  }
+
+  @include mq($l-size){
+    font-size: 1.54rem;
+  }
+
+  @include mq($m-size){
+    font-size: 1.4rem;
+  }
+
+  @include mq($s-size){
+    font-size: 1.3rem;
+  }
+
+  @include mq($xs-size){
+    font-size: 1.25rem;
+  }
+  
+}

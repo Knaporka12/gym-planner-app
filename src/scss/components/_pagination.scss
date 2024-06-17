@@ -1,0 +1,25 @@
+.pagination{
+
+    gap: 0.2rem;
+
+    .page-link {
+        color: $theme-color;
+        font-size: 1.2rem;
+        font-weight: 450;
+
+        &:hover{
+            color: $theme-color;
+            background-color: $header-color;
+        }
+    }
+
+    .page-item.active .page-link {
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+        z-index: 0;
+
+        &:hover{
+            color: white;
+        }
+    }
+}

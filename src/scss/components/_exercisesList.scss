@@ -1,0 +1,35 @@
+.exercises-list{
+
+    @include flex-center(row, wrap);
+    gap: 8rem;
+    margin-bottom: 2rem;
+
+    @include mq($m-size){
+        gap: 7rem;
+    }
+    
+    @include mq($s-size){
+        gap: 6rem;
+    }
+
+    @include mq($xs-size){
+        gap: 3.5rem;
+    }
+
+    &__h2{
+        font-size: 2.25rem;
+
+        @include mq($m-size){
+            font-size: 2rem;
+        }
+    
+        @include mq($s-size){
+            font-size: 1.85rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.65rem;
+        }
+    }
+
+}

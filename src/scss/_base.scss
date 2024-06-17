@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  @include flex-center(column, nowrap);
+  font-family: "Rubik", sans-serif;
+}
+
+
+.App, #root{
+  width: 100%;
+  @include flex-center(column, nowrap);
+  flex-grow: 1;
+}

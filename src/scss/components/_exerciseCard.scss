@@ -1,0 +1,101 @@
+.exercise-card {
+
+    @include flex-center(column, nowrap);
+    justify-content: start;
+    border: 2px solid $font-color;
+    border-radius: 12px;
+    width: 310px;
+    height: 445px;
+    padding: 1rem;
+    position: relative;
+
+    @include mq($xs-size){
+        width: 280px;
+        height: 400px;
+        padding: 0.75rem;
+    }
+
+    &__exercise-link, &__exercise-figure{
+        @include flex-center(column, nowrap);
+        gap: 0.4rem;
+
+        @include mq($xs-size){
+            gap: 0.3rem;
+        }
+    }
+
+    &__exercise-figure{
+       width: 250px;
+
+        @include mq($xs-size){
+            width: 220px;
+        }
+    }
+
+    &__exercise-gif{
+        width: 100%;
+        margin-bottom: 0.35rem;
+    }
+
+    &__exercise-figcaption{
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+        @include mq($xs-size){
+            font-size: 1.1rem;
+        }
+    }
+
+    &__exercise-para{
+        font-size: 1.2rem;
+
+        span{
+            color: $theme-color;
+        }
+
+        @include mq($xs-size){
+            font-size: 1rem;
+        }
+    }
+
+    &__exercise-btn--details{
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+        background-color: white;
+        font-size: 1.3rem;
+
+        @include mq($xs-size){
+            font-size: 1.2rem;
+        }
+
+        &:hover{
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+
+    &__exercise-btn--add{
+
+        position: absolute;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        border: none;
+        background-color: white;
+        font-size: 1.35rem;
+
+        @include mq($xs-size){
+            font-size: 1.25rem;
+        }
+    }
+
+}

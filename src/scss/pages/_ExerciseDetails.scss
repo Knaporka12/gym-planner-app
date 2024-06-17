@@ -1,0 +1,188 @@
+.exercise-details{
+    width: 100%;
+    @include flex-center(column, nowrap);
+    gap: 3rem;
+    flex-grow: 1;
+    margin-bottom: 5rem;
+    position: relative;
+
+    &__h2{
+        flex-grow: 1;
+        @include center-content();
+    }
+
+    &__figure-description{
+        width: 360px;
+        @include flex-center(column, nowrap);
+
+        @include mq($m-size){
+            width: 335px;
+        }
+
+        @include mq($s-size){
+            width: 310px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+
+    &__description{
+        width: 80%;
+        @include flex-center();
+        justify-content: space-evenly;
+        margin-bottom: 4rem;
+
+        @include mq($l-size){
+            width: 90%;
+            @include flex-center(column, nowrap);
+            gap: 4rem;
+        }
+
+        @include mq($m-size){
+            gap: 3rem;
+        }
+    }
+
+    &__article{
+        @include flex-center(column, nowrap);
+        max-width: 45%;
+        gap: 1.5rem;
+
+        @include mq($m-size){
+            gap: 1rem;
+            max-width: 80%;
+        }
+
+        @include mq($s-size){
+            gap: 0.8rem;
+            max-width: 90%;
+        }
+
+        span{
+            color: $theme-color;
+            text-transform: capitalize;
+            margin-left: 0.5rem;
+        }
+
+        .span-transition, h2{
+
+            position: relative;
+
+            &::after{
+                content: '';
+                height: 2px;
+                width: 90%;
+                position: absolute;
+                top: 110%;
+                left: 50%;
+                background-color: $theme-color;
+                transform: scaleX(0) translateX(-50%);
+                transition: 0.25s all;
+                transform-origin: center center;
+            }
+        
+
+            &:hover::after{
+                transform: scaleX(1) translateX(-50%);
+            }
+        }
+    }
+
+    &__h2--description{
+        color: $theme-color;
+        font-size: 2.5rem;
+
+        @include mq($m-size){
+            font-size: 2rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.7rem;
+        }
+    }
+
+    &__para--body-part, &__para--body-target{
+        font-size: 1.65rem;
+
+        @include mq($m-size){
+            font-size: 1.5rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.35rem;
+        }
+    }
+
+    &__para--body-equipment{
+        font-size: 1.5rem;
+
+        @include mq($m-size){
+            font-size: 1.4rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.3rem;
+        }
+    }
+
+    &__para--body-secondary-muscles{
+        font-size: 1.4rem;
+
+        @include mq($m-size){
+            font-size: 1.3rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.2rem;
+        }
+    }
+
+    &__para--body-instructions{
+        font-size: 1.75rem;
+        font-weight: 500;
+
+        @include mq($m-size){
+            font-size: 1.6rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.45rem;
+        }
+
+        span{
+            font-size: 1.15rem;
+            display: block;
+            margin-top: 0.75rem;
+            color: $font-color;
+            text-transform: none;
+            font-weight: 400;
+            font-style: italic;
+
+            @include mq($m-size){
+                font-size: 1.05rem;
+            }
+
+            @include mq($s-size){
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__h3{
+        font-size: 1.95rem;
+
+        @include mq($m-size){
+            font-size: 1.65rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.45rem;
+        }
+    }
+
+}

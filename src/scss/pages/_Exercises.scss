@@ -1,0 +1,110 @@
+.exercises{
+
+    width: 100%;
+    @include flex-center(column, nowrap);
+    gap: 2rem; 
+    margin-bottom: 4.5rem;
+    position: relative;
+    
+    &__h1{
+        font-size: 3.5rem;
+
+        @include mq($l-size){
+            font-size: 2.95rem;
+        }
+
+        @include mq($m-size){
+            font-size: 2.55rem;
+        }
+
+        @include mq($s-size){
+            font-size: 2.15rem;
+
+        }
+
+        @include mq($xs-size){
+            font-size: 1.95rem;
+
+        }
+        
+
+    }
+
+    &__form{
+        width: max(300px, 60%);
+        @include flex-center(row, nowrap);
+        box-shadow: 0px 0px 10px -3px $font-color;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+
+        @include mq($s-size){
+            width: 90%;
+            @include flex-center(column, nowrap);
+            box-shadow: none;
+            border-radius: 0px;
+            margin-bottom: 2rem;
+            gap: 1rem;
+        }
+        
+    }
+
+    &__input{
+        flex-grow: 1;
+        border: 2px solid gray;
+        border-right: none;
+        box-shadow: none;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+
+        @include mq($s-size){
+            border-radius: 10px;
+            border: 2px solid gray;
+            width: 100%;
+        }
+        
+    }
+
+    &__btn-submit{
+        //border-left: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        box-shadow: none;
+        background-color: white;
+
+        @include mq($s-size){
+            border-radius: 12px;
+        }
+        
+
+        &:hover{
+            color: white;
+            background-color: $theme-color;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    &__para-form-invalid{
+        font-size: 1.55rem;
+        color: red;
+        margin-bottom: 1rem;
+        animation: invalid-form 0.3s ease-in-out forwards;
+
+        @include mq($m-size){
+            font-size: 1.4rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.25rem;
+
+        }
+    }
+
+    &__btn-reset-filters{
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+
+}
+
+
+   

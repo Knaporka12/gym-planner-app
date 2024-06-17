@@ -1,0 +1,79 @@
+.training-day{
+    width: 100%;
+    @include flex-center(column, nowrap);
+    gap: 2.5rem;
+    flex-grow: 1;
+    margin-bottom: 4rem;
+
+    &__h1{
+        font-size: 3.25rem;
+
+        @include mq($s-size){
+            font-size: 3rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 2.65rem;
+        }
+    }
+
+    &__form{
+        @include flex-center();
+        gap: 1rem;
+
+        @include mq($s-size){
+            gap: 0.85rem;
+        }
+
+        @include mq($xs-size){
+            gap: 0.7rem;
+        }
+
+        button{
+            box-shadow: none;
+            &:hover{
+                padding: 0.55rem 1rem;
+            }
+        } 
+    }
+
+    &__container-training-target{
+        @include flex-center();
+        gap: 1rem;
+
+        @include mq($s-size){
+            gap: 0.85rem;
+        }
+
+        @include mq($xs-size){
+            gap: 0.7rem;
+        }
+        
+        .edit-icon{
+            position: relative;
+            transform: translateY(-100%);
+
+            &:hover{
+                transform: scale(1.08) translateY(-80%);
+            }
+        }
+    }
+
+    &__h2{
+        font-size: 2.5rem;
+        color: $theme-color;
+        margin-bottom: 2.25rem;
+
+        @include mq($s-size){
+            font-size: 2.25rem;
+            margin-bottom: 2.15rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.95rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+}

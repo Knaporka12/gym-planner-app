@@ -1,0 +1,30 @@
+.training-day-list{
+    width: 100%;
+    @include flex-center();
+    row-gap: 3rem;
+    column-gap: 12rem;
+
+    @include mq($s-size){
+        row-gap: 2.75rem;
+    }
+
+    @include mq($xs-size){
+        row-gap: 2.15rem;
+    }
+
+    &__no-exercises{
+        font-size: 1.85rem;
+
+        a{
+            font-size: 2.1rem;
+            display: block;
+            text-decoration: underline;
+            transition: 0.15s all;
+            margin-top: 0.45rem;
+
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}

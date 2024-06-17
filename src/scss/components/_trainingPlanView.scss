@@ -1,0 +1,162 @@
+.training-plan-view{
+
+    @include flex-center(column, nowrap);
+    width: 70%;
+    gap: 4rem;
+    border: $theme-border;
+    background-color: $header-color;
+    padding: 2.25rem;
+    border-radius: 20px;
+    position: relative;
+
+    @include mq($l-size){
+        gap: 3rem
+    }
+
+    @include mq(900px){
+        top: 4rem;
+    }
+
+    @include mq($m-size){
+        gap: 2.5rem
+    }
+
+    @include mq($s-size){
+        gap: 2rem;
+        top: 6.5rem;
+    }
+
+    @include mq(620px){
+        width: 80%;
+    }
+
+    @include mq(515px){
+        width: 90%;
+    }
+
+    @include mq(450px){
+        top: 7.5rem;
+        padding: 1.25rem;
+    }
+
+    &__filter{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        @include flex-center(column, nowrap); 
+        z-index: 1000;
+    }
+
+    &__h3{
+        font-size: 1.95rem;
+        max-width: 75%;
+
+        @include mq($l-size){
+            font-size: 1.75rem;
+        }
+
+        @include mq($m-size){
+            font-size: 1.5rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.4rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.2rem;
+        }
+    }
+
+    &__ul{
+        @include flex-center(row, wrap);
+        width: 100%;
+        gap: max(3rem, 6.5%);
+
+        @include mq(620px){
+            gap: 2.5rem;
+        }
+
+        @include mq(515px){
+            gap: 2rem;
+        }
+
+        div {
+            @include flex-center(column, nowrap);
+            gap: 0.5rem;
+
+            span.span--day-number{
+                font-size: 1.4rem;
+                color: $theme-color;
+
+                @include mq($m-size){
+                    font-size: 1.3rem;
+                }
+
+                @include mq($s-size){
+                    font-size: 1.2rem;
+                }
+
+                @include mq($xs-size){
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+
+    &__li{
+        @include flex-center(column, nowrap);
+        align-items: flex-start;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.2s all;
+        padding: 1rem 0rem;
+        position: relative;
+
+        @include mq($m-size){
+            font-size: 1.4rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.3rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.2rem;
+        }
+
+        &:hover{
+            transform: translateY(-4px) scale(1.1);
+            
+            span.span--day{
+                color: $theme-color;
+            }
+        }
+
+        span.span--added{
+            @include flex-center();
+            font-size: 1.1rem;
+            animation: added-animation 1.5s ease-in-out forwards;
+
+            @include mq($s-size){
+                font-size: 1rem;
+            }
+
+            @include mq($xs-size){
+                font-size: 0.95rem;
+            }
+        }
+    }
+
+    &__checkmark-icon{
+        color: green;
+    }
+
+    .close-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

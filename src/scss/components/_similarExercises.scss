@@ -1,0 +1,38 @@
+.similar-exercises{
+
+    @include flex-center(row, wrap);
+    gap: 6.5rem;
+    margin-bottom: 2rem;
+
+    @include mq($m-size){
+        gap: 5.35rem;
+        margin-bottom: 1.85rem;
+    }
+
+    @include mq($s-size){
+        gap: 3.9rem;
+        margin-bottom: 1.8rem;
+    }
+
+    @include mq($xs-size){
+        gap: 2.7rem;
+        margin-bottom: 1.7rem;
+    }
+
+    &__h3{
+        font-size: 1.95rem;
+
+        @include mq($m-size){
+        font-size: 1.85rem;
+        }
+
+        @include mq($s-size){
+            font-size: 1.75rem;
+        }
+
+        @include mq($xs-size){
+            font-size: 1.55rem;
+        }
+    }
+
+}

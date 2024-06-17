@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.home__landing {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home__para-create {
+  font-size: 2.5rem;
+  max-width: 30%;
+  line-height: 3;
+}
+.home__para-create span {
+  font-weight: 500;
+  color: #D16A2B;
+}/*# sourceMappingURL=Home.css.map */

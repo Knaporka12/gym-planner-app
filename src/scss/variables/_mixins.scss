@@ -1,0 +1,17 @@
+@mixin flex-center($direction: row, $wrap: wrap) {
+    display: flex ;
+    flex-flow: $direction $wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-content() {
+    display: grid ;
+    place-content: center;
+}
+
+@mixin mq($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
