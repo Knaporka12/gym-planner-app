@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/gym-planner-app/static/css/main.9dff7366.css",
-    "main.js": "/gym-planner-app/static/js/main.2e5fab5c.js",
-    "static/media/slider-5.png": "/gym-planner-app/static/media/slider-5.18e0cd63e67f354221ef.png",
-    "static/media/slider-3.jpeg": "/gym-planner-app/static/media/slider-3.b4465a3b541ec594eeaa.jpeg",
-    "static/media/slider-4.jpg": "/gym-planner-app/static/media/slider-4.2a4e04331064f84389fe.jpg",
-    "static/media/slider-2.webp": "/gym-planner-app/static/media/slider-2.ab3ca7ca7d96dd742886.webp",
-    "static/media/slider-1.webp": "/gym-planner-app/static/media/slider-1.5ee6dce8deffe04b8b27.webp",
-    "static/media/descriptions.webp": "/gym-planner-app/static/media/descriptions.a9db1685a1800d80239c.webp",
-    "static/media/muscle.png": "/gym-planner-app/static/media/muscle.c1190a8c3dcf859ff839.png",
-    "static/media/kettlebell.png": "/gym-planner-app/static/media/kettlebell.4b46b1435b01668ad0f5.png",
-    "static/media/dumbell.png": "/gym-planner-app/static/media/dumbell.e08d9a55bff65c93f335.png",
-    "index.html": "/gym-planner-app/index.html",
-    "main.9dff7366.css.map": "/gym-planner-app/static/css/main.9dff7366.css.map",
-    "main.2e5fab5c.js.map": "/gym-planner-app/static/js/main.2e5fab5c.js.map"
+    "main.css": "/static/css/main.9dff7366.css",
+    "main.js": "/static/js/main.5cf21040.js",
+    "static/media/slider-5.png": "/static/media/slider-5.18e0cd63e67f354221ef.png",
+    "static/media/slider-3.jpeg": "/static/media/slider-3.b4465a3b541ec594eeaa.jpeg",
+    "static/media/slider-4.jpg": "/static/media/slider-4.2a4e04331064f84389fe.jpg",
+    "static/media/slider-2.webp": "/static/media/slider-2.ab3ca7ca7d96dd742886.webp",
+    "static/media/slider-1.webp": "/static/media/slider-1.5ee6dce8deffe04b8b27.webp",
+    "static/media/descriptions.webp": "/static/media/descriptions.a9db1685a1800d80239c.webp",
+    "static/media/muscle.png": "/static/media/muscle.c1190a8c3dcf859ff839.png",
+    "static/media/kettlebell.png": "/static/media/kettlebell.4b46b1435b01668ad0f5.png",
+    "static/media/dumbell.png": "/static/media/dumbell.e08d9a55bff65c93f335.png",
+    "index.html": "/index.html",
+    "main.9dff7366.css.map": "/static/css/main.9dff7366.css.map",
+    "main.5cf21040.js.map": "/static/js/main.5cf21040.js.map"
   },
   "entrypoints": [
     "static/css/main.9dff7366.css",
-    "static/js/main.2e5fab5c.js"
+    "static/js/main.5cf21040.js"
   ]
 }
